@@ -7,7 +7,7 @@ nvidia-docker run \
   --rm \
   --privileged \
   --env="DISPLAY" \
-  --user=$USER \
+  --user=$USERNAME \
   --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
   -v $DIR/../dev-env-build:/build \
   -v /home/developer/code:/home/developer/code \
